@@ -1,0 +1,300 @@
+.header{
+  background-color: rgb(150, 119, 243);
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: rgb(222, 222, 222);
+  z-index: 100;  
+  
+
+
+}
+.left-section{
+background-color: rgb(107, 77, 146);
+align-items: center;
+display: flex;
+}
+.middle-section{  
+background-color: rgb(107, 77, 146);
+border-radius: 10px;
+flex: 1;
+margin-left: 70px;
+margin-right: 35px;
+max-width: 500px;
+display: flex;
+align-items: center ;
+}
+.searchbar{
+  flex: 1;
+  padding-left: 10px;
+  height: 36px;  
+  width: 0;
+  font-size: 16px;
+  border: 1px solid rgb(192,192,192);
+  border-radius: 29px;
+  box-shadow: inset 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.searchbar::placeholder{
+  font-family: roboto,Arial;
+  font-size: 16px;
+}
+
+.search-button{
+height: 40px;
+width: 40px;
+background-color: rgb(241, 235, 235);
+margin-left: -1px; 
+margin-right: 10px;   
+border-width: 1px;
+border-style: solid;
+border-radius: 100px;
+border-color: rgb(192,192,192);
+position: relative;
+}
+.search-icon{
+  height: 25px;
+}
+
+.search-button,
+.mic-button, 
+.upload-icon-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.search-button .tooltip,
+.mic-button .tooltip,
+.upload-icon-container .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;  /* does nothing when hovering on tool tip*/
+  white-space:nowrap; /* text doesnt wrap after this*/
+}
+
+.search-button:hover .tooltip,
+.mic-button:hover .tooltip,
+.upload-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+.mic-button{
+height: 40px;
+width: 40px;
+border-radius: 20px;
+border: none;
+background-color: rgb(244, 244, 244);
+}
+
+.mic-icon{
+height: 25px;
+}
+.hamlogo{
+height: 24px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.right-section{
+background-color: rgb(107, 77, 146);
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+  }
+.upload-icon{
+  background-color: white;
+  height: 30px;
+  border-radius: 20px ;
+}
+
+.mc-icon{
+  height: 32px;
+  border-radius: 16px;
+}
+
+
+/*
+.sidebar{
+background-color: rgb(150, 119, 243);
+position:fixed;
+left: -5px;
+top: 55px;
+bottom: 0;
+width: 52px;
+padding-top: 5px;
+}
+.sidebar-link{
+height: 74px;
+display: flex;
+justify-content: center; // align horizontally
+align-items: center;  // align vertically
+flex-direction:column; // align the text under-neath the icons
+cursor: pointer;
+}
+.sidebar-link:hover{
+background-color:rgb(107, 77, 146);
+}
+.sidebar-link img{
+height: 24px;
+margin-bottom: 4px;
+}
+.sidebar-link div{
+font-size: 10px;
+}
+*/
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: scroll;
+  font-family: Roboto, sans-serif;
+}
+  a {
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero {
+    background: #1f2937;
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .herosecond {
+    font-size: 18px;
+    color:#E5E7EB;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color:#1f2937;
+    font-weight: 100;
+  }
+  
+  button.signup {
+    display:flex;
+    font-family: Roboto, sans-serif;
+    border-color:#f9faf8;
+    border-width: 3px;
+    border-radius: 8px;
+    background: #3882f6;
+    font-size: 18px;
+    font-weight: bold;
+    color:#E5E7EB;
+    padding: 5px 20px;
+  }
+
+  .sidehero {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 300px;
+  }
+
+  .info {
+    background: #f9faf8;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pics {
+    border: 5px solid #3882f6;
+    border-radius: 8px;
+    border-color: #3882f6;
+  }
+
+  .quote {
+    background-color: #E5E7EB;
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+  }
+
+  .subquote {
+    background-color: #E5E7EB;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: right;
+  }
+
+  .quotecontainer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 40px;
+  }
+
+  .callcontainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882f6;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 50px;
+  }
+/* just trying something */
+  .call {
+    font-size: 24px;
+    color: #e5e7eb;
+  }
+
+  .footer {
+    height: 72px;
+    background: #1f2937;
+    font-size: 18px;
+    color:#E5E7EB;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
